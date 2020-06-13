@@ -11,5 +11,5 @@ pub fn raindrops(n: u32) -> String {
     checker(5, "Plang");
     checker(7, "Plong");
 
-    return if result.is_empty() { n.to_string() } else { result.join("") }
+    if result.is_empty() { n.to_string() } else { result.join("") }
 }
